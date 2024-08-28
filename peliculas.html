@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PeliFenix</title>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: #030303;
+    font-family: "Bebas Neue", sans-serif;         
+    font-weight: 400; 
+    font-style: normal;
+    color: #FFFFFF;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-item: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 35px;
+    color: #FFFFFF;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+    font-size: 22px;
+    padding: 20px;
+    color: #FFFFFF;
+    display: block;
+}
+
+.menu .navbar ul li a:hover {
+    color: #FF2F28;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width:991px) {
+    
+    .menu {
+        padding: 20px;
+    }
+    
+    .menu label {
+        display: initial;
+    }
+    
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #212121;
+        display: none;
+        border-radius: 50px;
+    }
+    
+    .menu .navbar ul li {
+        width: 100%;     
+    }
+    
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+    </style>
+    
+</head>
+<body>
+    <div class="menu container">
+            
+            <a href="index.html" class="logo" >PeliFenix</a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="menu.png" class="menu-icono" alt="menu">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="peliculas.html">Peliculas</a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=61563485055794&mibextid=ZbWKwL">Facebook</a></li>
+                    <li><a href="https://vm.tiktok.com/ZMr3Ej8AM/">Tik Tok</a></li>
+                </ul>
+            </nav>
+            
+        </div>
+        
+        <br><br><br><br>
+        
+        <div class="box-1">
+        
+            <a href="pelicula1.html"><img src="img1.jpg" width="185"></a>
+            <a href="pelicula2.html"><img src="img2.jpg" width="185"></a>
+            <br><br>
+            <a href="pelicula3.html"><img src="img3.jpg" width="185"></a>
+            <a href="pelicula4.html"><img src="img4.jpg" width="185"></a>
+            <br><br>
+            <a href="pelicula5.html"><img src="img5.jpg" width="185"></a>
+            <a href="pelicula6.html"><img src="img6.jpg" width="185"></a>
+            <br><br>
+            <a href="pelicula7.html"><img src="img7.jpg"width="185"></a>
+            
+        </div>
+</body>
+</html>
