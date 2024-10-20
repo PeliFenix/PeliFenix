@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>PeliFenix</title>
+    
+    <style>
+     
+     @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Prociono&display=swap');
+        
+body {
+    background-color: #030303;
+    color: #FFFFFF;
+    font-family: "Prociono", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: 1px underline;
+}
+
+input {
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    padding-top: 8px;
+    text-align: center;
+    line-height: 10px;
+}
+   
+button {
+    border-radius: 15px;
+    width: 90px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    background-color: #FFFFFF;
+    border: none;
+    font-family: "Prociono", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+img {
+    width: 340px;
+    height: 190px;
+    border-radius: 20px;
+}
+  
+.novedades {
+    border: solid 1px #333333;
+    border-radius: 20px;
+    background-color: #333333;
+} 
+
+p {
+    text-decoration: 1px underline;
+}
+
+.novedades h3 {
+    border: solid 2px;
+    border-radius: 5px;
+}
+
+.fecha {
+    border: solid 0;
+    border-radius: 5px;
+    background-color: #FF0033;
+    display: inline-block;
+}
+
+    </style>
+    
+</head>
+<body>
+    
+    <p>Contraseña: 2024</p>
+    
+    <div class"password">
+        
+        <center>
+          <h1>LOGIN</h1>
+          <input type="password" id="contraseña" placeholder="Ingrese la contraseña">
+          <br>
+          <br>
+          <button onclick="VerificarContraseña()">Ingresar</button>  
+        </center>
+        
+    </div>
+      
+      <hr>
+      <br>
+      
+    <div class="novedades">
+        
+        <center>
+            <div>
+                <img src="nuevapeli.jpg">
+                <h3>NUEVA ACTUALIZACIÓN</h3>
+                <p> - Nueva pelicula "Los Horrores de Caddo Lake" <br> - Nuevo género "Terror"  <br> - Nuevo apartado de novedades</p>
+                <p class="fecha">20/10</p>
+            </div>
+        </center>
+        
+    </div>  
+    
+    <script src="script.js"></script>
+    
+</body>
+</html>

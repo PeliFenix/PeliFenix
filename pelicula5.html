@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título de la página</title>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    tex-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-weight: 400;
+    font-style: normal;
+    background-color: #030303;
+    color: #FFFFFF;
+}
+
+a {
+    text-decoration: none;
+    border-bottom: none;
+}  
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.logo {
+    font-size: 35px;
+    color: #FFFFFF;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 22px;
+    padding: 20px;
+    color: #FFFFFF;
+    display: block;
+}
+
+.menu .navbar ul li a:hover {
+    color: #FF2F28;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+@media (max-width: 991px) {
+    
+    .menu {
+        padding: 20px;
+    }
+    
+    .menu navbar {
+        display: initial;
+    }
+    
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #030303;
+        display: none;
+    }
+    
+    .menu .navbar ul li {
+        width: 100%;
+    }
+    
+    #menu:checked ~ .navbar {
+        display: initial;
+        border-radius: 0 0 15px 15px;
+    }
+}
+
+.informacion img {
+    display: block;
+    margin: 0 auto;
+    width: 240px;
+    height: 350px;
+    margin-top: 30px;
+    border-radius: 0 25px 0 25px;
+}
+
+.informacion h2 {
+    margin-top: 60px;
+}
+
+    </style>
+    
+</head>
+<body>
+     
+        <div class="menu container">           
+            <a href="menu.html"  class"logo">PeliFenix</a>
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="Menu.png" class="menu-icono" alt="menu">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="menu.html">Inicio</a></li>
+                    <li><a href="contenido.html">Peliculas</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </nav>         
+        </div>
+        
+        <div class="informacion">
+            
+            <center>
+                <h2>Los Horrores de Caddo Lake</h2>
+                <img src="img5.jpg">
+                <br>
+                <hr>
+                <br>
+                <p>
+                    Género: Ciencia ficción | Drama | Misterio | Suspenso / Audio: Latino e idioma original
+                </p>
+                <br>
+                <hr>
+            </center>
+            
+        </div>
+        
+        <script src="https://fast.wistia.com/embed/medias/fjgk7d58az.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:50.0% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_fjgk7d58az seo=true videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/fjgk7d58az/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>
+        
+        <center>
+            <br>
+            <hr>
+            <br>
+            <p>
+                Un escritor regresa a su ciudad natal y descubre que los residentes están siendo convertidos en vampiros.
+            </p>
+        </center>
+</body>
+</html>
